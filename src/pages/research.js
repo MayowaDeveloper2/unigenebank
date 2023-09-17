@@ -71,10 +71,6 @@ const Research = () => {
 
 
     </div>
-    <div className="my-col-4 xs-down-3 down-3 centered">
-      <div><img className="yahaya" src={dryahaya} alt="dryahaya" /></div>
-
-    </div>
     <div className="my-col-6 down-8">
       <div className="xs-off-1 xs-md-off-1 centered"><p className="bold italise">"Ultimately, the key to creating a truly innovative and creative engineering program is to bridge the gap between academia and industry"</p></div>
       <div className="centered"><p className="bold"> – Dr. Suleiman Abimbola Yahaya</p></div>
