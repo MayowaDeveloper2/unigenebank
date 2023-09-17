@@ -6,7 +6,6 @@ import research1 from '../images/research1.jpg'
 import research2 from '../images/research2.jpg'
 import research3 from '../images/research4.jpg'
 import research4 from '../images/research5.jpg'
-import dryahaya from '../images/dryahaya.jfif'
 
 const Research = () => {
     return ( <>
