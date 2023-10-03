@@ -1,32 +1,43 @@
+import React from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom"
-import './pages/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Userguides from './pages/userguides';
-import Research from './pages/research';
-import './all.css'
-import './index.css'
-import './typography.css'
+import Home from "./pages/Home";
+import "./all.css";
+import "./index.css";
+import "./typography.css";
+import SearchBar from "./pages/search2";
+import Slider from "./components/slideshow";
+import Login from "./admin/login";
+import Dashboard from "./admin/dashboard";
+import Register from "./admin/register";
+import Post from "./admin/post";
+import Posts from "./admin/posts";
+import Journal from "./pages/journal";
+import Research from "./pages/research";
 import whoweare from "./pages/whoweare";
 import Ourteam from "./pages/ourteam";
 
-
 function App() {
+
   return (
-   <>
-   <BrowserRouter>
-    <Navbar />
-     <Routes>
-      <Route exact path="/" Component={Home} />
-      <Route path="/userguide" exact Component={Userguides} />
-      <Route path="/research" exact Component={Research} />
-      <Route path="/who-we-are" exact Component={whoweare} />
-      <Route path="/our-team" exact Component={Ourteam} />
-     </Routes>
-     <Footer />
-   </BrowserRouter>
-   </>
+    <>
+
+       <BrowserRouter>
+         <Routes>
+           <Route path="/" exact Component={Home} />
+           <Route path="/research" Component={Research} />
+           <Route path="/login" Component={Login} />
+           <Route path="/register" Component={Register} />
+           <Route path="/wp-admin/post" Component={Post} />
+           <Route path="/wp-admin/dashboard" Component={Dashboard} />
+           <Route path="/wp-admin/posts" Component={Posts} />
+           <Route path="/dashboard" Component={Dashboard} />
+           <Route path="/our-publications" Component={Journal} />
+           <Route path="/who-we-are" Component={whoweare} />
+           <Route path="/our-team" Component={Ourteam} />
+
+         </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

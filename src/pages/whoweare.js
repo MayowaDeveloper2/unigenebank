@@ -1,7 +1,10 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const whoweare = () => {
     return ( <>
+    <Navbar/>    
     <div className="my-mother"></div>
      <div className="xs-down-8 down-4 my-mother bg-blue">
         <div className="my-col-12 off-1 xs-off-1"><h3 className="about">ABOUT US</h3></div>
@@ -25,6 +28,7 @@ const whoweare = () => {
         <div className="text-about"><p>Our database is the No 1 in Africa source for information on genetics and biology. We hold many genetic informations useful for research.</p></div>
 
     </div>
+    <Footer/>
     </>
 
     )

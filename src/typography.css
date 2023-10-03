@@ -745,7 +745,7 @@
     margin-right:50%;
   }
   .xs-md-off-7{
-    margin-margin-right:58.33%;
+    margin-right:58.33%;
   }
   .xs-md-off-8{
     margin-right:66.66%;
@@ -1079,6 +1079,10 @@
   }
   .my-bottom-50 {
    padding-bottom: 50px;
+  }
+
+  .my-bottom-30 {
+   margin-bottom: 30px;
   }
   
   /* keyframes */

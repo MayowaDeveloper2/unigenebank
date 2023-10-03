@@ -10,11 +10,6 @@ const data1 = [
         "The Unilorin Biomedical Engineering Research Program (UBERP) provides term-time and summer grants for students conducting independent research in collaboration with a faculty mentor.",
     },
     {
-      title: "Dr. Yusuf Yahaya Undergraduate Fellowship Program",
-      content:
-        "The Dr. Yahaya Undergraduate Fellowship Program (DYUF) provides a term-time stipend, as well as the option for summer research funds, to a group of approximately 20 juniors and seniors, selected in the spring of their sophomore years.",
-    },
-    {
       title: "Program For Research in Science and Engineering",
       content:
         "The Program for Research in Science and Engineering (PRISE) is a 10-week summer program that aims to build community and stimulate creativity among Unilorin undergraduate researchers in the life, physical/natural, engineering, and applied sciences.",

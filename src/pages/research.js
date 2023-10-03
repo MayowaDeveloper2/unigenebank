@@ -6,9 +6,12 @@ import research1 from '../images/research1.jpg'
 import research2 from '../images/research2.jpg'
 import research3 from '../images/research4.jpg'
 import research4 from '../images/research5.jpg'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Research = () => {
     return ( <>
+     <Navbar/> 
      <div className="r-landing">
       <div className="my-mother down-15 centered xs-down-50">
        <div className="my-col-3 centered">
@@ -70,10 +73,12 @@ const Research = () => {
 
 
     </div>
-    <div className="my-col-6 down-8">
+    
+    <div className="my-col-12 down-8">
       <div className="xs-off-1 xs-md-off-1 centered"><p className="bold italise">"Ultimately, the key to creating a truly innovative and creative engineering program is to bridge the gap between academia and industry"</p></div>
       <div className="centered"><p className="bold"> – Dr. Suleiman Abimbola Yahaya</p></div>
     </div>
+    <Footer/>
     </>
 
     )

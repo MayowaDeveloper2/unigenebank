@@ -1,8 +1,11 @@
 import React from "react";
 import mayowa from '../images/mayowa.jpg'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Ourteam () {
-    return (
+    return ( <>
+    <Navbar/>
     <div className="my-mother down-3">
       <div className="container">
 
@@ -331,6 +334,8 @@ function Ourteam () {
            </div>
       </div>
     </div>
+    <Footer/>
+</>
     
     )
 }
