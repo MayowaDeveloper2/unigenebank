@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import "./all.css";
 import "./index.css";
 import "./typography.css";
-import SearchBar from "./pages/search2";
-import Slider from "./components/slideshow";
 import Login from "./admin/login";
 import Dashboard from "./admin/dashboard";
 import Register from "./admin/register";

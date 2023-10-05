@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect, useRef } from 'react';
 import SearchResults from '../components/resultsearch';
 import useUtils from '../utils/useutils';
@@ -8,14 +9,18 @@ const SearchBar = () => {
   const [detailedResults, setDetailedResults] = useState([]);
   const [pending, setPending] = useState(false);
   const [seeSearch, setseeSearch] = useState(false);
-  const [fastaData, setFastaData] =  useState();
+  // const [fastaData, setFastaData] =  useState();
 
-  const fetchGeneDetails = async (id) => {
+  // eslint-disable-next-line
+  const fetchGENE = async (id) => {
     const endpoint = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=${id}&retmode=json`;
     const response = await fetch(endpoint);
     const data = await response.json();
     console.log(data)
     // return data;
+    if (pending) {
+      // Do something while 'pending' is true
+    }
 
 
       // const err = [];
@@ -62,18 +67,18 @@ const SearchBar = () => {
     }
   };
 
+  // eslint-disable-next-line
   const fetchFasta = async (ids) => {
     const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${ids}&rettype=fasta&retmode=text`;
     const response = await fetch(url);
     const data = await response.text();
-    const arr = [];
     console.log(data)
     // setFastaData(data);
 };
 
 
+  // eslint-disable-next-line
   const handleDetailsFromID = async (id) => {
-    const arr = [];
     try {
       const endpoint = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=${id}&retmode=json`;
       const response = await fetch(endpoint);
@@ -90,9 +95,9 @@ const SearchBar = () => {
       console.error("There was an error with the fetch operation:", error);
     }
   };  
-  const [searchQuery, setSearchQuery] = useState('');
+  const [setSearchQuery] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
-  const [dropdownItems, setDropdownItems] = useState([
+  const [dropdownItems ] = useState([
     'Global Database',
     'Unilorin Database',
   ]);
@@ -100,10 +105,10 @@ const SearchBar = () => {
   const [placeholderText, setPlaceholderText] = useState('Enter search term(s)');
   const dropdownRef = useRef(null);
 
-  const handleInputChange = (event) => {
-    const query = event.target.value;
-    setSearchQuery(query);
-  };
+  // const handleInputChange = (event) => {
+  //  const query = event.target.value;
+  //  setSearchQuery(query);
+  // };
 
   const handleDropdownClick = () => {
     setShowDropdown(!showDropdown);

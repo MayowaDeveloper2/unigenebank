@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 const Posts = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
-  const [post, setPost] = useState([]);
 
   useEffect(() => {
     axios

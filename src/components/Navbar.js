@@ -24,7 +24,7 @@ return ( <>
           <span className=" px13 bold"><img className="genelogo" src={genelogo} alt=""/></span>
         </div>
       </div>
-      <div className="my-col-7 mg-11 xs-2 bold px13">
+      <div className="my-col-7 down-1 mg-11 xs-2 bold px13">
         <div className="menu-icon-x" onClick={handleShowNavbar}>
           {showNavbar ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />} {/* Toggle between FaBars and FaTimes based on showNavbar */}
         </div>
@@ -49,7 +49,7 @@ return ( <>
             </div>
             </div>  
           </li>
-          <li className="linkk">About
+          <li className="linkk mg">About
            <div className="extension">
            <i className="fas fa-angle-down mg-3"></i>
            <div className="nav-extentions">

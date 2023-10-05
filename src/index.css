@@ -35,6 +35,10 @@ a:links {
   font-size: 10px;
 }
 
+.mg {
+  margin-left: 13px;
+}
+
 .genelogo {
   width: 150px;
   height: 40px;
@@ -1025,6 +1029,7 @@ ul.team-icon li a.dribble{
 
 .text-about {
   width: 60%;
+  font-size: 12px;
 }
 
 .typewriter-container {

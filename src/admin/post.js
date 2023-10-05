@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import AdminNavbar from "./adminnavbar";
 import Sidebar from "./sidebar";
@@ -13,7 +13,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Create a JSON object of the form data
+    
     const formData = {
       title,
       authors,
